@@ -1,2 +1,2 @@
-BeeApplication
-==============
+Bee Application
+===============
