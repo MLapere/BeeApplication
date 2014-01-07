@@ -36,7 +36,7 @@ public final class R {
         public static final int ic_launcher=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f090011;
+        public static final int action_settings=0x7f090015;
         public static final int addLocation=0x7f09000c;
         public static final int confirmPassword=0x7f09000b;
         public static final int diseaseBlurb=0x7f090010;
@@ -54,12 +54,17 @@ public final class R {
         public static final int password=0x7f090009;
         public static final int signupBtn=0x7f09000d;
         public static final int signupLink=0x7f090002;
+        public static final int userdetails=0x7f090011;
+        public static final int useremail=0x7f090013;
+        public static final int username=0x7f090012;
+        public static final int usersurname=0x7f090014;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int activity_signup=0x7f030002;
         public static final int disease_list_layout=0x7f030003;
+        public static final int user_details=0x7f030004;
     }
     public static final class menu {
         public static final int login=0x7f080000;
@@ -86,6 +91,10 @@ public final class R {
         public static final int hello_world=0x7f060002;
         public static final int title_activity_main=0x7f060009;
         public static final int title_activity_signup=0x7f060008;
+        public static final int userdetails=0x7f060013;
+        public static final int useremail=0x7f060016;
+        public static final int username=0x7f060014;
+        public static final int usersurname=0x7f060015;
     }
     public static final class style {
         /** 

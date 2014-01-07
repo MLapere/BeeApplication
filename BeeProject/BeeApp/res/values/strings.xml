@@ -20,5 +20,9 @@
     <string name="Search">Search:</string>
     <string name="SearchHint">Enter keyword(s)</string>
     <string name="diseaseimage">Disease Image</string>
+    <string name="userdetails">USER DETAILS</string>
+    <string name="username">Name:</string>
+    <string name="usersurname">Surname:</string>
+    <string name="useremail">Email:</string>
 
 </resources>
