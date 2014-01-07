@@ -123,14 +123,11 @@ public class MainActivity extends Activity implements TextWatcher {
 				JSONObject jObject = new JSONObject(responseString);		        
 		        if (jObject.getString("result").equals("success")) {
 		        	Log.d("debug", "request successful, results: "+ jObject.getString("count"));
-		        	list = new ArrayList<JSONObject>();
+		        	adapter.clear();
 		        	JSONArray jArray = jObject.getJSONArray("data");
-		        	//JSONObject[] jObjectArray = new JSONObject[jArray.length()];
 		            for(int i = 0; i < jArray.length(); i++){
-		            	//jObjectArray[i] = jArray.getJSONObject(i);
-		            	list.add(jArray.getJSONObject(i));
+		            	adapter.add(jArray.getJSONObject(i));
 		            }
-		            adapter.notifyDataSetChanged();
 		        } else {
 		        	Log.d("debug", "request failed, message: "+ jObject.getString("msg"));
 		        }
