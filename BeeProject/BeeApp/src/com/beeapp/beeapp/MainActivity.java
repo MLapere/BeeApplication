@@ -26,6 +26,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -82,6 +83,12 @@ public class MainActivity extends Activity implements TextWatcher {
 		    	  startActivity(intent);
 		      }
 	    });
+	}
+	
+	public boolean profileBtnClicked(MenuItem menuItem) {
+		Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+		startActivity(intent);
+		return true;
 	}
 
 	@Override
