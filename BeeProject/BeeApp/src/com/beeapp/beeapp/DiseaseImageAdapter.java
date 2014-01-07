@@ -33,8 +33,6 @@ public class DiseaseImageAdapter extends ArrayAdapter<JSONObject> {
 	    TextView diseaseName = (TextView) rowView.findViewById(R.id.diseaseName);
 	    TextView diseaseBlurb = (TextView) rowView.findViewById(R.id.diseaseBlurb);
 	    ImageView imageView = (ImageView) rowView.findViewById(R.id.diseaseImage);
-	    //Random r = new Random();
-	    //int i = r.nextInt(8) + 1;
 	    int i = (position % 8) + 1;
 	    int res = R.drawable.d1;
 	    switch (i) {
@@ -68,20 +66,11 @@ public class DiseaseImageAdapter extends ArrayAdapter<JSONObject> {
 	    imageView.setImageResource(res);
 	    try {
 			diseaseName.setText(list.get(position).getString("name"));
+			// TODO: get blurb somehow, or leave it
 			diseaseBlurb.setText("Varroa mites are generally identified by their tiny red appea...");
 		} catch (JSONException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	    // Change the icon for Windows and iPhone
-	    /*
-	    String s = list[position];
-	    if (s.startsWith("iPhone")) {
-	      imageView.setImageResource(R.drawable.no);
-	    } else {
-	      imageView.setImageResource(R.drawable.ok);
-	    }
-		*/
 	    return rowView;
 	  }
 
