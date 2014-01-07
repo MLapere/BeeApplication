@@ -37,6 +37,10 @@
             android:name="com.beeapp.beeapp.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
+        <activity
+            android:name="com.beeapp.beeapp.DiseaseDetailActivity"
+            android:label="@string/title_activity_disease_detail" >
+        </activity>
     </application>
 
 </manifest>
