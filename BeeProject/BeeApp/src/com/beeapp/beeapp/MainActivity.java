@@ -18,6 +18,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -25,6 +26,9 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -68,6 +72,16 @@ public class MainActivity extends Activity implements TextWatcher {
 		gallery.setAdapter(adapter);
 		search = (EditText) this.findViewById(R.id.editText1);
 		search.addTextChangedListener(this);
+		
+		gallery.setOnItemClickListener(new OnItemClickListener() {
+		      @Override
+		      public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		    	  JSONObject jO = list.get(position);
+		    	  Intent intent = new Intent(MainActivity.this, DiseaseDetailActivity.class);
+		    	  intent.putExtra("JSON", jO.toString());
+		    	  startActivity(intent);
+		      }
+	    });
 	}
 
 	@Override

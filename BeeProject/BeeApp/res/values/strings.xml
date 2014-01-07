@@ -20,5 +20,6 @@
     <string name="Search">Search:</string>
     <string name="SearchHint">Enter keyword(s)</string>
     <string name="diseaseimage">Disease Image</string>
+    <string name="title_activity_disease_detail">Disease Details</string>    
 
 </resources>
