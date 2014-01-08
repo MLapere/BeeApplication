@@ -24,7 +24,5 @@
     <string name="username">Name:</string>
     <string name="usersurname">Surname:</string>
     <string name="useremail">Email:</string>
-    <string name="profile">Profile</string>
-    <string name="title_activity_disease_detail">Disease Details</string>	
-    
+
 </resources>
